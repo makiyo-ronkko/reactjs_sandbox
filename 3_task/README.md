@@ -4,4 +4,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This is our school project in third lesson.
 
+## Screenshot
 
+![3_task screenshot](./public/3_task.png?raw=true)
