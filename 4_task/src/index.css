@@ -12,39 +12,3 @@ code {
     monospace;
 }
 
-
-form{
-  display: flex;
-  flex-direction: column;
-  padding: 0 1em 1em 1em;
-  margin: 2em;
-  background: #ccd0d3;
-  box-shadow: 0px 0px 0px 10px #ccd0d3;
-  border: dashed 2px white;
-}
-
-input{
-  width: 200px;
-  padding: 5px;
-  margin: 5px;
-  background: transparent;
-  border: none;
-  font-size: 1rem;
-}
-
-.view{
-  padding: 0 1em 1em 1em;
-  margin: 2em;
-  background: #d6ebff;
-  box-shadow: 0px 0px 0px 10px #d6ebff;
-  border: dashed 2px white;
-}
-
-span{
-  font-family: 'Gaegu', cursive;
-  padding: 10px;
-  margin: 5px;
-  font-size: 1.5rem;
-  border-bottom: dashed 2px white;
-}
-
