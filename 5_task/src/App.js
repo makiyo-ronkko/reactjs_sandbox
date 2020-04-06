@@ -44,7 +44,6 @@ class App extends Component {
   };
 
   // starting the game and running the next() function
-
   startHandler = () => {
     this.next();
   };
@@ -63,6 +62,7 @@ class App extends Component {
           <p>Your score: {this.state.score}</p>
         </div>
 
+        {/* if the circle is clicked, clickHandler binds an individual circle to the number 1-4 */}
         <main>
           <Circle active={this.state.current === 1} click={this.clickHandler.bind(this, 1)} defaultColor='yellow' />
           <Circle active={this.state.current === 2} click={this.clickHandler.bind(this, 2)} defaultColor='green' />
