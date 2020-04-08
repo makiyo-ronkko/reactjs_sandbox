@@ -1,11 +1,17 @@
 body{
   min-height: 800px;
   background-repeat: no-repeat;
-  background-image: linear-gradient(to right top, #ad430c, #bf6b00, #c59500, #bfc000, #a8eb12);
+  background-image: linear-gradient(to right top, #8E44AD , #E74C3C, #F0B27A , #A9DFBF, #D5F5E3);
 }
 
 .header-container{
   text-align: center;
+}
+.header-container p{
+  font-size: 1.5rem;
+}
+.header-container span{
+  font-weight: bold;
 }
 
 main{

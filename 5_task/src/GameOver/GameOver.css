@@ -20,6 +20,7 @@
     text-align: center;
     box-shadow: 0 0 5px rgb(131, 127, 127);
     position: relative;
+    top: 100px;
     display: grid;
     justify-items: center;
     z-index: 999;
@@ -33,4 +34,8 @@
     height: 20px;
     font-size: 0.8rem;
     padding: 0;
+}
+
+span{
+    font-weight: bold;
 }

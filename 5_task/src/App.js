@@ -13,6 +13,7 @@ class App extends Component {
     score: 0,
     current: 0,
     showGameOver: false,
+    rounds: 0,
   };
 
   // place variables higher as possible
@@ -21,6 +22,12 @@ class App extends Component {
 
   // next function is finding a new number
   next = () => {
+
+    if (this.state.rounds >= 100) {
+      this.endHandler();
+      return; // to end the game 
+    }
+
     let nextActive = undefined; //initially undecided
 
     do {
@@ -29,8 +36,10 @@ class App extends Component {
 
     this.setState({ // current becomes nextActive number
       current: nextActive, // keep looping until the game ends
+      rounds: this.state.rounds + 1, // state round +1
     });
 
+    this.pace *= 0.95;
     this.timer = setTimeout(this.next, this.pace); //two properties, which function, which speed
     console.log('this is active circle', this.state.current);
   };
@@ -39,9 +48,20 @@ class App extends Component {
 
   //(circleId) is parameter, 1 2 3 and 4.
   clickHandler = (circleId) => {
+    let audio = new Audio("/soundeffect.mp3");
+
     console.log('Clicked!', circleId);
+
+    if (this.state.current !== circleId) {
+      this.endHandler();
+      return;
+    }
+
+    audio.play();
+
     this.setState({
-      score: this.state.score + 1
+      score: this.state.score + 1,
+      roudns: 0,
     });
   };
 
@@ -52,11 +72,13 @@ class App extends Component {
 
   // ending the game by using clearTimeout()
   endHandler = () => {
+    let audio = new Audio("/gameend.mp3");
     clearTimeout(this.timer);
 
     this.setState({
       showGameOver: true,
     })
+    audio.play();
 
   };
 
@@ -64,17 +86,17 @@ class App extends Component {
     return (
       <div>
         <div className='header-container'>
-          <h1>Speed Game</h1>
-          <p>Your score: {this.state.score}</p>
+          <h1>Pad the Shibainue</h1>
+          <p>Your score: <span>{this.state.score}</span></p>
         </div>
 
         {/* if the circle is clicked, clickHandler binds an individual circle to the number 1-4 */}
 
         <main>
-          <Circle active={this.state.current === 1} click={this.clickHandler.bind(this, 1)} defaultColor='yellow' />
-          <Circle active={this.state.current === 2} click={this.clickHandler.bind(this, 2)} defaultColor='green' />
-          <Circle active={this.state.current === 3} click={this.clickHandler.bind(this, 3)} defaultColor='red' />
-          <Circle active={this.state.current === 4} click={this.clickHandler.bind(this, 4)} defaultColor='blue' />
+          <Circle active={this.state.current === 1} click={this.clickHandler.bind(this, 1)} defaultColor='#FCF3CF' />
+          <Circle active={this.state.current === 2} click={this.clickHandler.bind(this, 2)} defaultColor='#F0B27A' />
+          <Circle active={this.state.current === 3} click={this.clickHandler.bind(this, 3)} defaultColor='#EC7063' />
+          <Circle active={this.state.current === 4} click={this.clickHandler.bind(this, 4)} defaultColor='#5DADE2' />
         </main>
 
         <div className='button-container'>
