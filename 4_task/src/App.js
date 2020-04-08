@@ -5,7 +5,10 @@ import View from './View/View.js';
 class App extends Component {
 
   state = {
-    value: ""
+    firstname: "",
+    lastname: "",
+    phonenumber: "",
+    message: "",
   };
 
   changeHandler = event => { // function(event)
