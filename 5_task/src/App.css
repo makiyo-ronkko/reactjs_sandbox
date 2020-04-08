@@ -11,6 +11,7 @@ body{
 main{
   display: flex;
   justify-content: center;
+  z-index: 10;
 }
 
 .button-container{

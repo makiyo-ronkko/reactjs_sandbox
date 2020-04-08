@@ -1,6 +1,7 @@
 import React, { Component } from 'react'; //rcc
 import './App.css';
 import Circle from './Circle/Circle';
+import GameOver from './GameOver/GameOver';
 
 const getRndInteger = (min, max) => {
   return Math.floor(Math.random() * (max - min) + 1) + min;
@@ -11,6 +12,7 @@ class App extends Component {
   state = {
     score: 0,
     current: 0,
+    showGameOver: false,
   };
 
   // place variables higher as possible
@@ -51,18 +53,23 @@ class App extends Component {
   // ending the game by using clearTimeout()
   endHandler = () => {
     clearTimeout(this.timer);
+
+    this.setState({
+      showGameOver: true,
+    })
+
   };
 
   render() {
     return (
       <div>
-
         <div className='header-container'>
           <h1>Speed Game</h1>
           <p>Your score: {this.state.score}</p>
         </div>
 
         {/* if the circle is clicked, clickHandler binds an individual circle to the number 1-4 */}
+
         <main>
           <Circle active={this.state.current === 1} click={this.clickHandler.bind(this, 1)} defaultColor='yellow' />
           <Circle active={this.state.current === 2} click={this.clickHandler.bind(this, 2)} defaultColor='green' />
@@ -74,9 +81,9 @@ class App extends Component {
           <button onClick={this.startHandler}>Start Game</button>
           <button onClick={this.endHandler}>End Game</button>
         </div>
-
-      </div >
-    )
+        {this.state.showGameOver && <GameOver score={this.state.score} />}
+      </div > // curly braces wrapping GameOver is JS, comparison. 
+    )   // if showGameOver and GameOver are matching
   }
 
 

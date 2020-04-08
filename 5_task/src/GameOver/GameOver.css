@@ -1,0 +1,36 @@
+.overlay{
+    position: fixed;
+    background: rgb(245, 240, 240, 0.4);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.popup-box{
+   
+    background: lightyellow;
+    padding: 0.5em;
+    width: 40%;
+    border-radius: 5px;
+    margin: 100px auto auto auto;
+    text-align: center;
+    box-shadow: 0 0 5px rgb(131, 127, 127);
+    position: relative;
+    display: grid;
+    justify-items: center;
+    z-index: 999;
+}
+
+.popup-box button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+    height: 20px;
+    font-size: 0.8rem;
+    padding: 0;
+}
