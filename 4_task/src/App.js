@@ -5,9 +5,9 @@ import View from './View/View.js';
 class App extends Component {
 
   state = {
-    firstname: "",
-    lastname: "",
-    phonenumber: "",
+    first: "",
+    last: "",
+    phone: "",
     message: "",
   };
 
