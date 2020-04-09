@@ -86,7 +86,7 @@ class App extends Component {
     return (
       <div>
         <div className='header-container'>
-          <h1>Pad the Shibainue</h1>
+          <h1>Pat the Shibainu</h1>
           <p>Your score: <span>{this.state.score}</span></p>
         </div>
 
