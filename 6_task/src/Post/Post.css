@@ -1,0 +1,25 @@
+.cards{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    margin: 1rem;
+   
+}
+
+.card-container{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 20px gainsboro;
+    border: 2px  solid gray;
+    padding: 1rem;
+    width: 300px;
+    
+}
+
+.card-container img{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 280px;
+}
