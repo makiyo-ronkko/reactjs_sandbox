@@ -30,18 +30,39 @@ class App extends Component {
   };
 
   removeHandler = (removeId) => {
-    const oldArray = [...this.state.posts];
-    oldArray.splice(removeId, 1);
-    this.setState({ posts: oldArray });
+    const oldArray = [...this.state.posts]; //... is preceed an original posts array
+    oldArray.splice(removeId, 1); // remove 1 element at removeID position
+    this.setState({ posts: oldArray }); // update the array after removal
     console.log('clicked');
   }
+
+  addLikeHandler = (id) => { // to find which post you clicked
+    const postId = this.state.posts.findIndex((p) => {
+      return p.id === id;
+    });
+    const post = { ...this.state.posts[postId] }; // spread object
+    post.likes += 1; // add new like to post object
+    const posts = [...this.state.posts]; // take full array, spread it
+    posts[postId] = post; // and add updated post to back array
+    this.setState({
+      posts: posts,
+    });
+  };
 
   render() {
 
     //mapping array
     const postsList = this.state.posts.map((post, index) => { // each element takes the parameter post
       return (
-        <Post key={post.id} img={post.img} title={post.title} author={post.author} desc={post.desc} click={this.removeHandler.bind(this, index)} />
+        <Post
+          key={post.id}
+          img={post.img}
+          likes={post.likes}
+          title={post.title}
+          author={post.author}
+          desc={post.desc}
+          removeClick={this.removeHandler.bind(this, index)}
+          likeClick={this.addLikeHandler.bind(this, post.id)} />
       )
     })
 

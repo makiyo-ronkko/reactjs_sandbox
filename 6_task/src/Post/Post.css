@@ -23,3 +23,8 @@
     padding: 5px;
     width: 280px;
 }
+
+.click-remove{
+    text-align: end;
+    cursor: pointer;
+}
