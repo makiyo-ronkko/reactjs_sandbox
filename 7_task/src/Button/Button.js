@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { Children } from 'react';
 import './Button.css';
 
 
-const Button = ({ click, text }) => {
+const Button = ({ clickHandler, text, children }) => {
     return (
-        <div>
-            <button onClick={click}>{text}</button>
+        <div className="button-container">
+            <button onClick={clickHandler}>
+                {text}
+                {children}
+            </button>
         </div>
     );
 }

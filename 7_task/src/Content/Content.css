@@ -3,5 +3,9 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    background-color: lightyellow;
+    margin: 0 200px;
+    padding: 50px;
+    border: double 5px #4ec4d3;
 }
 

@@ -26,8 +26,10 @@ export default Lecture;
 import React from 'react';
 import './Content.css';
 
-const Content = (props) => {
-    if (props.likecounter === 0 && props.dislikecounter === 0) {
+//const Content = (props) => {
+const Content = ({ likecounter, dislikecounter }) => {
+    //if (props.likecounter === 0 && props.dislikecounter === 0) {
+    if (likecounter === 0 && dislikecounter === 0) {
         return (<div className="display-container">
             <h2>If you like this page, please click Like! </h2>
             <h2>Otherwise, click Dislike!</h2>
@@ -38,8 +40,9 @@ const Content = (props) => {
 
             <div className="display-container">
                 <h1>Click to vote: </h1>
-                <h2>Likes: {props.likecounter}</h2>
-                <h2>Dislikes: {props.dislikecounter} </h2>
+                {/* <h2>Likes: {props.likecounter}</h2> */}
+                <h2>Likes: {likecounter}</h2>
+                <h2>Dislikes: {dislikecounter} </h2>
             </div>
         );
     }
