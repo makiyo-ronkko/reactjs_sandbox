@@ -14,6 +14,7 @@ class App extends Component {
     current: 0,
     showGameOver: false,
     rounds: 0,
+    endMessage: '',
   };
 
   // place variables higher as possible
@@ -73,10 +74,26 @@ class App extends Component {
   // ending the game by using clearTimeout()
   endHandler = () => {
     let audio = new Audio("/gameend.mp3");
+    let endScore = undefined;
+
+    if (this.state.score <= 5) {
+      endScore = "Your score is less than 5, do it again!"
+    }
+    if (this.state.score <= 10) {
+      endScore = "You can do it better!"
+    }
+    if (this.state.score > 10) {
+      endScore = "Good job!"
+    }
+    if (this.state.score >= 15) {
+      endScore = "you did it great!"
+    }
+
     clearTimeout(this.timer);
 
     this.setState({
       showGameOver: true,
+      endMessage: endScore,
     })
     audio.play();
 
@@ -103,7 +120,7 @@ class App extends Component {
           <button onClick={this.startHandler}>Start Game</button>
           <button onClick={this.endHandler}>End Game</button>
         </div>
-        {this.state.showGameOver && <GameOver score={this.state.score} />}
+        {this.state.showGameOver && <GameOver score={this.state.score} endMessage={this.state.endMessage} />}
       </div > // curly braces wrapping GameOver is JS, comparison. 
     )   // if showGameOver and GameOver are matching
   }

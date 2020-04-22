@@ -13,6 +13,7 @@ const GameOver = (props) => {
                 <div>
                     <h2>Game Over!</h2>
                     <p>Your final score: <span>{props.score}</span></p>
+                    <p><span>{props.endMessage}</span></p>
                 </div>
             </div>
         </div>
