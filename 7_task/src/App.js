@@ -1,24 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Content from './Content/Content';
+import Button from './Button/Button';
 
-function App() {
+const App = () => {
+  const [likecounter, setLikeCounter] = useState(0);
+  const [dislikecounter, setDislikeCounter] = useState(0);
+
+  const addHandler = () => setLikeCounter(likecounter + 1);
+  const removeHandler = () => setDislikeCounter(dislikecounter + 1);
+  const resetHandler = () => [setLikeCounter(0), setDislikeCounter(0)];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="button-container">
+        <Button click={addHandler} text="Like" />
+
+        <Button click={removeHandler} text="Dislike" />
+        <Button click={resetHandler} text="Reset" />
+      </div>
+      <div className="display-container">
+        <Content likecounter={likecounter} dislikecounter={dislikecounter} />
+      </div>
     </div>
   );
 }
