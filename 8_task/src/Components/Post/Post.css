@@ -1,0 +1,23 @@
+.post-container{
+    display: flex;
+    min-width: 800px;
+    justify-content: space-between;
+}
+
+.post-container img{
+    border: 1px solid #ddd;
+    display: grid;
+    align-items: center;
+    justify-self: center;
+    border-radius: 4px;
+    width: 400px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.post-container .post-text{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+}
