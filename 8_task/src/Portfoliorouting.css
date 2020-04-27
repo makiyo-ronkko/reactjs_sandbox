@@ -1,0 +1,107 @@
+.nav-container{
+    flex-direction: row;
+    background: lightyellow;
+    margin: 50px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav h2{
+    margin: 30px 20px 20px 20px;
+}
+
+
+nav ul{
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+    margin: 20px;
+}
+
+nav ul li{
+   
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+}
+
+nav ul li a:hover {
+    border-bottom: 5px dotted #000000;;
+    font-weight: bolder;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: lightyellow;
+    margin: 50px;
+    width: auto;
+    min-height: 400px;
+}
+
+.about-container{
+    display: flex;
+    min-width: 800px;
+    justify-content: space-between;
+}
+
+.about-container img{
+    border: 1px solid #ddd;
+    display: grid;
+    align-items: center;
+    justify-self: center;
+    border-radius: 4px;
+    width: 400px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.about-container .text{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+}
+
+.blog-container{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    margin: 1rem;
+}
+
+.blogpost{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 20px gainsboro;
+    border: 2px  solid gray;
+    padding: 1rem;
+    width: 200px;
+    
+}
+
+.blogpost img{
+    border: 1px solid #ddd;
+    display: grid;
+    align-items: center;
+    justify-self: center;
+    border-radius: 4px;
+    padding: 5px;
+    width: 180px;
+}
+
+.blogpost h2 p{
+    list-style-type: none;
+    color: black;
+}

@@ -84,7 +84,7 @@ const Topic = () => {
      Use it to access match.params of the current <Route>. */
     let { CourseId } = useParams();
     return (
-        <h1>THis is page for {CourseId}</h1>
+        <h1>This is page for {CourseId}</h1>
 
     );
 };

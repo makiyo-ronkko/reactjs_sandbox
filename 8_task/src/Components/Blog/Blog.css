@@ -1,0 +1,32 @@
+.blog-container{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    margin: 1rem;
+}
+
+.blogpost{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 20px gainsboro;
+    border: 2px  solid gray;
+    padding: 1rem;
+    width: 200px;
+    
+}
+
+.blogpost img{
+    border: 1px solid #ddd;
+    display: grid;
+    align-items: center;
+    justify-self: center;
+    border-radius: 4px;
+    padding: 5px;
+    width: 180px;
+}
+
+.blogpost h2 p{
+    list-style-type: none;
+    color: black;
+}

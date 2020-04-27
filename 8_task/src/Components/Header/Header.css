@@ -1,0 +1,40 @@
+.nav-container{
+    flex-direction: row;
+    background: lightyellow;
+    margin: 50px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav h2{
+    margin: 30px 20px 20px 20px;
+}
+
+
+nav ul{
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+    margin: 20px;
+}
+
+nav ul li{
+   
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+}
+
+nav ul li a:hover {
+    border-bottom: 5px dotted #000000;;
+    font-weight: bolder;
+}
