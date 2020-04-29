@@ -4,16 +4,11 @@ import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import About from './Components/About/About';
 import Blog from './Components/Blog/Blog';
+//import './App.css';
 //import Post from './Components/Post/Post';
-import './App.css';
-//import Post from './Components/Post/Post';
-
-
-/* onClickHander = () => {
-  return (
-    <Route path="/posts/:blogId" />
-  );
-} */
+import CssBaseline from '@material-ui/core/CssBaseline';
+import Typography from '@material-ui/core/Typography';
+import Container from '@material-ui/core/Container';
 
 
 const App = () => {
@@ -22,10 +17,16 @@ const App = () => {
       <Header />
       <main>
         <Switch>
-          <Route path="/about" component={About} />
-          <Route path="/blog" component={Blog} />
-          <Route path="/blog/:blogId" />
-          <Route exact path="/" component={Home} />
+          <React.Fragment>
+            <CssBaseline />
+            <Container maxWidth="xl">
+              <Typography component="div" style={{ backgroundColor: 'lightyellow', height: '100vh' }} >
+                <Route path="/about" component={About} />
+                <Route path="/blog" component={Blog} />
+                <Route exact path="/" component={Home} />
+              </Typography>
+            </Container>
+          </React.Fragment>
         </Switch>
       </main>
     </Router>

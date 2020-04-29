@@ -1,21 +1,24 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import './Post.css';
+import postdata from '../../postdata';
 
-const Post = (props) => {
-    let { blogId } = useParams();
+const Post = () => {
+    let { postId } = useParams();
+    let post = postdata.find((p) =>
+        p.title === postId);
+
     return (
-
         <div className="post-container">
-            <h1>BlogPost: {blogId}</h1>
-            <img src={props.img} alt={props.title} />
+            <img src={post.img} alt={post.title} />
             <div className="post-text">
-                <h2>{props.title}</h2>
-                <p>{props.author}</p>
-                <p>{props.desc}</p>
+                <h2>{post.title}</h2>
+                <p>{post.author}</p>
+                <p>{post.desc}</p>
+                <Link to="/blog">Back to Blog page</Link>
             </div>
         </div>
     );
-}
+};
 
 export default Post;
