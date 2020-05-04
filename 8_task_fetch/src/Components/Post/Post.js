@@ -1,6 +1,5 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-//import './Post.css';
 import postdata from '../../postdata';
 import Card from 'react-bootstrap/Card';
 

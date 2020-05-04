@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
+import Cards from '../Cards/Cards';
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
                 <Card class="col-12">
                     <div class="card text-black bg-white">
                         <Card.Body >
+                            <Cards />
                             <h3 class="card-title">Welcome To My Portfolio!</h3>
                         </Card.Body>
                     </div>
