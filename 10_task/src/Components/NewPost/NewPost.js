@@ -1,24 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 import "./NewPost.css";
+import axios from 'axios';
 
 const NewPost = () => {
+  const [newPost, setNewPost] = useState({
+    title: "",
+    desc: "",
+    img: ""
+  });
+
+  const changeValueHandler = (e) => {
+    setNewPost({
+      ...newPost,//spread the exsiting object
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const addPostHandler = (e) => {
+    e.preventDefault();
+
+    axios.post('http://localhost:3001/posts', newPost)
+      .then(response => {
+        console.log(response);
+      }); // sending newPost to axios local host json database
+  }
+
   return (
     <>
       <h1>Add new post</h1>
       <form className="newPost">
         <div>
           <label htmlFor="title">Title</label>
-          <input type="text" name="title" id="title" />
+          <input type="text" name="title" id="title" onChange={changeValueHandler} />
         </div>
         <div>
           <label htmlFor="desc">Description</label>
-          <textarea type="text" name="desc" id="desc" />
+          <textarea type="text" name="desc" id="desc" onChange={changeValueHandler} />
         </div>
         <div>
           <label htmlFor="img">Image URL</label>
-          <input type="text" name="img" id="img" />
+          <input type="text" name="img" id="img" onChange={changeValueHandler} />
         </div>
-        <button type="submit">Add new post</button>
+        <button type="submit" onClick={addPostHandler}>Add new post</button>
       </form>
     </>
   );
