@@ -5,6 +5,7 @@
 .newPost label {
   width: 200px;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .newPost input,
@@ -13,4 +14,16 @@
   border: 1px solid rgb(99, 99, 99);
   padding: 0.5rem;
   font-size: 0.8rem;
+}
+
+button{
+  padding: 10px;
+  margin: 5px;
+  background: white;
+  border-radius: 5px;
+}
+
+button:hover{
+  font-weight: bolder;
+  cursor: pointer;
 }

@@ -30,5 +30,56 @@
       "desc": "Proin vehicula, augue et consequat lobortis, enim orci ultricies mauris, in facilisis metus turpis et purus. Integer pretium quis lectus at efficitur. Donec varius a lacus ut iaculis. Quisque porta, magna vitae accumsan rutrum, lacus orci volutpat sem, mattis hendrerit lacus ipsum in sem.",
       "img": "https://source.unsplash.com/1600x900/?tree"
     }
+  ],
+  "products": [
+    {
+      "catId": 1,
+      "id": 1,
+      "name": "pork"
+    },
+    {
+      "catId": 1,
+      "id": 2,
+      "name": "chicken"
+    },
+    {
+      "catId": 1,
+      "id": 3,
+      "name": "beef"
+    },
+    {
+      "catId": 2,
+      "id": 4,
+      "name": "milk"
+    },
+    {
+      "catId": 2,
+      "id": 5,
+      "name": "cheese"
+    },
+    {
+      "catId": 3,
+      "id": 6,
+      "name": "rye"
+    },
+    {
+      "catId": 3,
+      "id": 7,
+      "name": "cibatta"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "meat"
+    },
+    {
+      "id": 2,
+      "name": "dairy"
+    },
+    {
+      "id": 3,
+      "name": "bread"
+    }
   ]
 }

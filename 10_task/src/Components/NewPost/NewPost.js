@@ -27,21 +27,24 @@ const NewPost = () => {
 
   return (
     <>
-      <h1>Add new post</h1>
       <form className="newPost">
+        <h2>Add new post</h2>
+
         <div>
-          <label htmlFor="title">Title</label>
+          <label htmlFor="title">TITLE</label>
           <input type="text" name="title" id="title" onChange={changeValueHandler} />
         </div>
         <div>
-          <label htmlFor="desc">Description</label>
+          <label htmlFor="desc">DESCRIPTION</label>
           <textarea type="text" name="desc" id="desc" onChange={changeValueHandler} />
         </div>
         <div>
-          <label htmlFor="img">Image URL</label>
+          <label htmlFor="img">IMAGE URL</label>
           <input type="text" name="img" id="img" onChange={changeValueHandler} />
         </div>
-        <button type="submit" onClick={addPostHandler}>Add new post</button>
+        <div>
+          <button type="submit" onClick={addPostHandler}>Add new post</button>
+        </div>
       </form>
     </>
   );
