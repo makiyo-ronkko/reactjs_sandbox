@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
+import './FormCategories.css';
 
 const FormCategories = () => {
 
@@ -17,11 +18,13 @@ const FormCategories = () => {
 
     const categoryList = categories.map(cat => {
         return (
-            <p key={cat.id}
-                className="card"
-                onClick={() => showProductHandler(cat.id)}>
-                {cat.name}
-            </p>
+            <div className="categoryCard">
+                <p key={cat.id}
+                    className="card"
+                    onClick={() => showProductHandler(cat.id)}>
+                    {cat.name}
+                </p>
+            </div>
         );
     });
 
@@ -48,7 +51,7 @@ const FormCategories = () => {
 
     const productList = products.map(prod => {
         return (
-            <div key={prod.id}>
+            <div key={prod.id} className="product">
                 <h2>{prod.name}</h2>
                 <label htmlFor="">Select quantity</label>
                 <input type="number" name={prod.name} id={prod.id} onChange={(event) => addItemHandler(event, prod.catId)} min="0" max="5" />
@@ -57,22 +60,31 @@ const FormCategories = () => {
         );
     });
 
+    const removePreOrderHandler = (id) => {
+        const oldList = [...order];
+        oldList.splice(id, 1); // removing 1 element at id
+        setOrder(oldList);
+    }
+
     const orderList = order.map((o, index) => {
         return (
-            <p key={o.prodId} >
-                {o.name}: {o.quantity}</p>
+            <div className="selectedItem">
+                <p key={o.prodId} className="preOrder" onClick={() => removePreOrderHandler(index)}>
+                    x {o.name}: {o.quantity}
+                </p>
+            </div>
         );
     });
 
     return (
         <div>
             <div>
-                <h1>Choose a category</h1>
+                <h2 style={{ margin: "20px" }}>Choose a category</h2>
                 <p>{categoryList}</p>
                 <p>{productList}</p>
             </div>
             <div>
-                <h2>Your preorder</h2>
+                <h2 style={{ margin: "20px" }}>Your preorder</h2>
                 <p>{orderList}</p>
             </div>
         </div>

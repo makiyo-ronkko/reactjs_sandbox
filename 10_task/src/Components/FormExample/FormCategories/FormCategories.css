@@ -1,0 +1,44 @@
+.categoryCard{
+    width: 100px;
+    text-align: center;
+    margin: 1rem;
+    background: #fff;
+    padding: 1rem;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 1px 1px rgba(139, 139, 139, 0.25);
+}
+
+.product{
+    margin: 1rem;
+}
+
+.product input {
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid rgba(139, 139, 139, 0.25);
+  padding: 0.5rem;
+  margin: 0.5rem;
+  font-size: 0.8rem;
+}
+
+button{
+    padding: 10px;
+    margin: 5px;
+    background: white;
+    border-radius: 5px;
+  }
+  
+  button:hover{
+    font-weight: bolder;
+    cursor: pointer;
+  }
+
+  .preOrder{
+    margin: 1rem;
+  }
+
+  .selectedItem{
+    cursor: pointer;
+  }
+  
