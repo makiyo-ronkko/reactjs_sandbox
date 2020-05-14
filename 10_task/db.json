@@ -90,18 +90,18 @@
   "moods": [
     {
       "id": 1,
-      "title": "Happy",
-      "like": 1
+      "title": "HAPPY",
+      "like": 0
     },
     {
       "id": 2,
-      "title": "Nothing",
-      "like": 1
+      "title": "NOTHING",
+      "like": 0
     },
     {
       "id": 3,
-      "title": "Depressed",
-      "like": 1
+      "title": "DEPRESSED",
+      "like": 0
     }
   ]
 }
