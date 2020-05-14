@@ -17,7 +17,7 @@ const Nav = () => {
             <Link to="/newpost">New Post</Link>
           </li>
           <li>
-            <Link to="/formexample">Form Example</Link>
+            <Link to="/formexample">PreOrder Form</Link>
           </li>
         </ul>
       </nav>

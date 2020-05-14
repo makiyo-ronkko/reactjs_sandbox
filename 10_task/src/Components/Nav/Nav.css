@@ -2,6 +2,7 @@
     flex-direction: row;
     background: lightyellow;
     margin: 50px;
+    width: auto;
 }
 
 nav{
@@ -35,6 +36,6 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    border-bottom: 5px dotted #000000;;
+    border-bottom: 2px dotted #000000;;
     font-weight: bolder;
 }
