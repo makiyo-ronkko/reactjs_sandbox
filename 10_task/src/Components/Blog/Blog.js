@@ -68,7 +68,7 @@ const Blog = () => {
         </Route>
         <Route path={match.path}>
           <div>
-            <h1>Blog</h1>
+            <h1 style={{ margin: "20px" }}>Blog</h1>
             {PostList}
           </div>
         </Route>
