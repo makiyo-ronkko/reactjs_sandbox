@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/reactjs_sandbox/static/css/main.af34d16a.chunk.css",
-    "main.js": "/reactjs_sandbox/static/js/main.ba10075f.chunk.js",
-    "main.js.map": "/reactjs_sandbox/static/js/main.ba10075f.chunk.js.map",
-    "runtime-main.js": "/reactjs_sandbox/static/js/runtime-main.e7aadc92.js",
-    "runtime-main.js.map": "/reactjs_sandbox/static/js/runtime-main.e7aadc92.js.map",
-    "static/js/2.f2edca4d.chunk.js": "/reactjs_sandbox/static/js/2.f2edca4d.chunk.js",
-    "static/js/2.f2edca4d.chunk.js.map": "/reactjs_sandbox/static/js/2.f2edca4d.chunk.js.map",
-    "index.html": "/reactjs_sandbox/index.html",
-    "precache-manifest.22155d14692825e30bad536ec9f2f543.js": "/reactjs_sandbox/precache-manifest.22155d14692825e30bad536ec9f2f543.js",
-    "service-worker.js": "/reactjs_sandbox/service-worker.js",
-    "static/css/main.af34d16a.chunk.css.map": "/reactjs_sandbox/static/css/main.af34d16a.chunk.css.map",
-    "static/js/2.f2edca4d.chunk.js.LICENSE.txt": "/reactjs_sandbox/static/js/2.f2edca4d.chunk.js.LICENSE.txt"
+    "main.css": "/reactjs_sandbox/relativepath/static/css/main.af34d16a.chunk.css",
+    "main.js": "/reactjs_sandbox/relativepath/static/js/main.db7dcb75.chunk.js",
+    "main.js.map": "/reactjs_sandbox/relativepath/static/js/main.db7dcb75.chunk.js.map",
+    "runtime-main.js": "/reactjs_sandbox/relativepath/static/js/runtime-main.f511c2e2.js",
+    "runtime-main.js.map": "/reactjs_sandbox/relativepath/static/js/runtime-main.f511c2e2.js.map",
+    "static/js/2.f2edca4d.chunk.js": "/reactjs_sandbox/relativepath/static/js/2.f2edca4d.chunk.js",
+    "static/js/2.f2edca4d.chunk.js.map": "/reactjs_sandbox/relativepath/static/js/2.f2edca4d.chunk.js.map",
+    "index.html": "/reactjs_sandbox/relativepath/index.html",
+    "precache-manifest.029ba365c8abba7e208361d93e9e454a.js": "/reactjs_sandbox/relativepath/precache-manifest.029ba365c8abba7e208361d93e9e454a.js",
+    "service-worker.js": "/reactjs_sandbox/relativepath/service-worker.js",
+    "static/css/main.af34d16a.chunk.css.map": "/reactjs_sandbox/relativepath/static/css/main.af34d16a.chunk.css.map",
+    "static/js/2.f2edca4d.chunk.js.LICENSE.txt": "/reactjs_sandbox/relativepath/static/js/2.f2edca4d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.e7aadc92.js",
+    "static/js/runtime-main.f511c2e2.js",
     "static/js/2.f2edca4d.chunk.js",
     "static/css/main.af34d16a.chunk.css",
-    "static/js/main.ba10075f.chunk.js"
+    "static/js/main.db7dcb75.chunk.js"
   ]
 }
