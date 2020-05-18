@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/reactjs_sandbox/static/css/main.ae9e25e8.chunk.css",
-    "main.js": "/reactjs_sandbox/static/js/main.9a33d2a0.chunk.js",
-    "main.js.map": "/reactjs_sandbox/static/js/main.9a33d2a0.chunk.js.map",
+    "main.css": "/reactjs_sandbox/static/css/main.6e7ff406.chunk.css",
+    "main.js": "/reactjs_sandbox/static/js/main.f97f5b64.chunk.js",
+    "main.js.map": "/reactjs_sandbox/static/js/main.f97f5b64.chunk.js.map",
     "runtime-main.js": "/reactjs_sandbox/static/js/runtime-main.e7aadc92.js",
     "runtime-main.js.map": "/reactjs_sandbox/static/js/runtime-main.e7aadc92.js.map",
     "static/js/2.3a795497.chunk.js": "/reactjs_sandbox/static/js/2.3a795497.chunk.js",
     "static/js/2.3a795497.chunk.js.map": "/reactjs_sandbox/static/js/2.3a795497.chunk.js.map",
     "index.html": "/reactjs_sandbox/index.html",
-    "precache-manifest.6bc5a4d89662d4a856df7fa7c4402dea.js": "/reactjs_sandbox/precache-manifest.6bc5a4d89662d4a856df7fa7c4402dea.js",
+    "precache-manifest.7795836a73ad5d1e7c5aae8ee23adf06.js": "/reactjs_sandbox/precache-manifest.7795836a73ad5d1e7c5aae8ee23adf06.js",
     "service-worker.js": "/reactjs_sandbox/service-worker.js",
-    "static/css/main.ae9e25e8.chunk.css.map": "/reactjs_sandbox/static/css/main.ae9e25e8.chunk.css.map",
+    "static/css/main.6e7ff406.chunk.css.map": "/reactjs_sandbox/static/css/main.6e7ff406.chunk.css.map",
     "static/js/2.3a795497.chunk.js.LICENSE.txt": "/reactjs_sandbox/static/js/2.3a795497.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e7aadc92.js",
     "static/js/2.3a795497.chunk.js",
-    "static/css/main.ae9e25e8.chunk.css",
-    "static/js/main.9a33d2a0.chunk.js"
+    "static/css/main.6e7ff406.chunk.css",
+    "static/js/main.f97f5b64.chunk.js"
   ]
 }
