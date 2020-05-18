@@ -29,6 +29,7 @@ const Mood = ({ initialMoods }) => {
 
     return (
         <div>
+            <h2>Welcome!</h2>
             <h3 style={{ textAlign: "center", margin: "1rem" }}>What is your mood today? <br />Add some number to indicate your feelings.</h3>
             {moods.map(mood => (
                 <MoodCard key={mood.id} {...mood} updateLike={updateLike} />))}

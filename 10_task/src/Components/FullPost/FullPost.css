@@ -1,3 +1,54 @@
+.fullPost{
+  display: flex;
+  margin: 30px;
+}
+
+.container{
+    position: relative;
+    margin: 2em 0;
+    padding: 0.5em 1em;
+    border: solid 3px #25323d;
+    border-radius: 8px;
+    background: rgba(233, 233, 247, 0.5);
+}
+.container .container-title{
+    position: absolute;
+    display: inline-block;
+    top: -13px;
+    left: 10px;
+    padding: 0 9px;
+    line-height: 1;
+    font-size: 19px;
+    background: #25323d;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.fullPost h1{
+  flex-direction: column;
+}
+.fullPost h2 p{
+  padding: 10px;
+  margin: 30px;
+}
+h2{
+  text-align: center;
+  padding: 20px;
+}
+
+.text-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .fullPost img {
-  width: 200px;
+  width: 500px;
+  padding: 20px;
 }

@@ -10,7 +10,7 @@ const PostCard = ({ title, img, desc, link, remove }) => {
       <p>{desc}</p>
       <img src={img} alt={title} />
       <Link to={link} style={{ color: "black", fontWeight: "bold", }}>Read more</Link>
-      <p onClick={remove}>Remove this post</p>
+      <p onClick={remove} style={{ cursor: "pointer" }}>Remove this post</p>
     </div>
   );
 };

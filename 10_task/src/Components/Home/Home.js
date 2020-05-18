@@ -16,11 +16,14 @@ const Home = () => {
 
   return (
     <div>
-      <h1 style={{ margin: "30px" }}>Welcome!</h1>
-      <Mood initialMoods={moods} />
-      <h2 onClick={toggleMood} style={{ textAlign: "center", cursor: "pointer", margin: "1rem", color: mood ? 'orange' : 'green' }}>{mood ? "Give me high five! (^.^)/" : "Kiitos (`.`)♡"}</h2>
-      <img alt="home" src="https://source.unsplash.com/1600x900/?color" />
-      <p style={{ margin: "30px", textAlign: "center" }}>{message}</p>
+      <div className="welcome-container">
+        <p className="container-title" onClick={toggleMood} style={{ textAlign: "center", cursor: "pointer", margin: "1rem", color: "white" }}>{mood ? "Give me high five! (^.^)/" : "Yay! Thanks (`.`)♡"}</p>
+        {/* <h1 className="container-title" style={{ margin: "30px" }}>Welcome!</h1> */}
+        <Mood initialMoods={moods} />
+      </div>
+
+      {/* <img alt="home" src="https://source.unsplash.com/1600x900/?color" /> */}
+      <p style={{ margin: "30px", textAlign: "center", background: "rgb(233, 233, 247, 0.52)" }}>{message}</p>
     </div>
   );
 };

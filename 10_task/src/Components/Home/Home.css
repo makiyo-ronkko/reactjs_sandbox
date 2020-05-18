@@ -7,3 +7,25 @@ img{
     padding: 10px;
     border-radius: 5px;
 }
+
+.welcome-container{
+    position: relative;
+    margin: 2em;
+    padding: 1em;
+    border: solid 2px #25323d;
+    border-radius: 8px;
+    background: rgba(233, 233, 247, 0.5);
+}
+
+.welcome-container .container-title{
+    position: absolute;
+    display: inline-block;
+    top: -25px;
+    left: 10px;
+    padding: 0 9px;
+    line-height: 1;
+    font-size: 19px;
+    background: #25323d;
+    border-radius: 5px;
+    color: #25323d;
+}

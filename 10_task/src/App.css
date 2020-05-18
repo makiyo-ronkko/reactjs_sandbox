@@ -6,4 +6,5 @@ main{
   margin: 50px;
   width: auto;
   min-height: 400px;
+  background: url(https://source.unsplash.com/1600x900/?color) no-repeat center center/ cover;
 }

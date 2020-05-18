@@ -4,7 +4,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Nav from "./Components/Nav/Nav";
 import Home from "./Components/Home/Home";
-import Blog from "./Components/Blog/Blog";
+//import Blog from "./Components/Blog/Blog";
+import BlogNoAxios from "./Components/Blog/BlogNoAxios";
 import NewPost from "./Components/NewPost/NewPost";
 import FormExample from "./Components/FormExample/FormExample/FormExample";
 
@@ -15,7 +16,8 @@ const App = () => {
       <main>
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/blog" component={Blog} />
+          {/* <Route path="/blog" component={Blog} /> */}
+          <Route path="/blog" component={BlogNoAxios} />
           <Route path="/newpost" component={NewPost} />
           <Route path="/formexample" component={FormExample} />
         </Switch>
