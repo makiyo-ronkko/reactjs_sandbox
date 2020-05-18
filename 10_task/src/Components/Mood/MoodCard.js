@@ -11,7 +11,7 @@ const MoodCard = ({ id, title, like, updateLike }) => {
         <div className="moodCard">
             <div>{title}</div>
             <div>
-                <button onClick={subtractLike} disabled={like <= 1}>-</button>
+                <button onClick={subtractLike} disabled={like <= 0}>-</button>
                 {like}
                 <button onClick={addLike}>+</button>
             </div>

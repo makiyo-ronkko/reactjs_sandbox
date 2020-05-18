@@ -1,16 +1,21 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+//import axios from 'axios';
 import MoodCard from './MoodCard';
 
-const Mood = () => {
-    const [moods, setMoods] = useState([]);
+const Mood = ({ initialMoods }) => {
+    const initialState = JSON.parse(window.localStorage.getItem('moods'));
+    const [moods, setMoods] = useState(initialMoods || initialState);
+
+    /*  useEffect(() => {
+         axios.get('http://localhost:3001/moods')
+             .then(response => {
+                 setMoods(response.data);
+             });
+     }, []); */
 
     useEffect(() => {
-        axios.get('http://localhost:3001/moods')
-            .then(response => {
-                setMoods(response.data);
-            });
-    }, []);
+        window.localStorage.setItem('items', JSON.stringify(moods));
+    }, [moods])
 
     const updateLike = (id, newLike) => {
         const newMoods = moods.map(mood => {
