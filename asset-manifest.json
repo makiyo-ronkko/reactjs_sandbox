@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/reactjs_sandbox/tree/master/10_task/static/css/main.af34d16a.chunk.css",
-    "main.js": "/reactjs_sandbox/tree/master/10_task/static/js/main.4725c362.chunk.js",
-    "main.js.map": "/reactjs_sandbox/tree/master/10_task/static/js/main.4725c362.chunk.js.map",
-    "runtime-main.js": "/reactjs_sandbox/tree/master/10_task/static/js/runtime-main.e0e7e0d1.js",
-    "runtime-main.js.map": "/reactjs_sandbox/tree/master/10_task/static/js/runtime-main.e0e7e0d1.js.map",
-    "static/js/2.f2edca4d.chunk.js": "/reactjs_sandbox/tree/master/10_task/static/js/2.f2edca4d.chunk.js",
-    "static/js/2.f2edca4d.chunk.js.map": "/reactjs_sandbox/tree/master/10_task/static/js/2.f2edca4d.chunk.js.map",
-    "index.html": "/reactjs_sandbox/tree/master/10_task/index.html",
-    "precache-manifest.527cd3abba788a5b0e3b41e27ed534ca.js": "/reactjs_sandbox/tree/master/10_task/precache-manifest.527cd3abba788a5b0e3b41e27ed534ca.js",
-    "service-worker.js": "/reactjs_sandbox/tree/master/10_task/service-worker.js",
-    "static/css/main.af34d16a.chunk.css.map": "/reactjs_sandbox/tree/master/10_task/static/css/main.af34d16a.chunk.css.map",
-    "static/js/2.f2edca4d.chunk.js.LICENSE.txt": "/reactjs_sandbox/tree/master/10_task/static/js/2.f2edca4d.chunk.js.LICENSE.txt"
+    "main.css": "/reactjs_sandbox/static/css/main.af34d16a.chunk.css",
+    "main.js": "/reactjs_sandbox/static/js/main.ba10075f.chunk.js",
+    "main.js.map": "/reactjs_sandbox/static/js/main.ba10075f.chunk.js.map",
+    "runtime-main.js": "/reactjs_sandbox/static/js/runtime-main.e7aadc92.js",
+    "runtime-main.js.map": "/reactjs_sandbox/static/js/runtime-main.e7aadc92.js.map",
+    "static/js/2.f2edca4d.chunk.js": "/reactjs_sandbox/static/js/2.f2edca4d.chunk.js",
+    "static/js/2.f2edca4d.chunk.js.map": "/reactjs_sandbox/static/js/2.f2edca4d.chunk.js.map",
+    "index.html": "/reactjs_sandbox/index.html",
+    "precache-manifest.22155d14692825e30bad536ec9f2f543.js": "/reactjs_sandbox/precache-manifest.22155d14692825e30bad536ec9f2f543.js",
+    "service-worker.js": "/reactjs_sandbox/service-worker.js",
+    "static/css/main.af34d16a.chunk.css.map": "/reactjs_sandbox/static/css/main.af34d16a.chunk.css.map",
+    "static/js/2.f2edca4d.chunk.js.LICENSE.txt": "/reactjs_sandbox/static/js/2.f2edca4d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.e0e7e0d1.js",
+    "static/js/runtime-main.e7aadc92.js",
     "static/js/2.f2edca4d.chunk.js",
     "static/css/main.af34d16a.chunk.css",
-    "static/js/main.4725c362.chunk.js"
+    "static/js/main.ba10075f.chunk.js"
   ]
 }
