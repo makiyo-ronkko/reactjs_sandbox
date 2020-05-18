@@ -10,7 +10,7 @@ import FormExample from "./Components/FormExample/FormExample/FormExample";
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/task10">
       <Nav />
       <main>
         <Switch>
