@@ -16,13 +16,18 @@ const NewPost = () => {
     });
   };
 
-  const addPostHandler = (e) => {
+  /* const addPostHandler = (e) => {
     e.preventDefault();
 
     axios.post('http://localhost:3001/posts', newPost)
       .then(response => {
         console.log(response);
       }); // sending newPost to axios local host json database
+  } */
+  const addPostHandler = (e) => {
+    e.preventDefault();
+    // updating the list
+    setNewPost({ ...newPost, [e.target.name]: e.target.value })
   }
 
   return (

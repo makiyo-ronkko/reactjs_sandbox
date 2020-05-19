@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <div>
       <div className="welcome-container">
-        <p className="container-title" onClick={toggleMood} style={{ textAlign: "center", cursor: "pointer", margin: "1rem", color: "white" }}>{mood ? "Give me high five! (^.^)/" : "Yay! Thanks (`.`)♡"}</p>
+        <p className="container-title" onClick={toggleMood} style={{ textAlign: "center", cursor: "pointer", margin: "1rem", color: "white" }}>{mood ? "Give me high five! (^.^)/" : "Yay! (`.`) (`.`) (`.`)♡"}</p>
         {/* <h1 className="container-title" style={{ margin: "30px" }}>Welcome!</h1> */}
         <Mood initialMoods={moods} />
       </div>
